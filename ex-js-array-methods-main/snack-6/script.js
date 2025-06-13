@@ -12,3 +12,10 @@ const zucchine = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
+
+const longerThan15 = zucchine.filter(zucchina => zucchina.length > 15);
+
+const rest = zucchine.filter(zucchina => zucchina.length <= 15);
+
+console.log(longerThan15);
+console.log(rest);
